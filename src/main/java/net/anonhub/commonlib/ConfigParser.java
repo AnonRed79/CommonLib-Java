@@ -60,6 +60,7 @@ public class ConfigParser {
             throw new BadPathException("the file \"" + file + "\" could not be found, check names and locations");
         }
 
+
 //        removes comments
         ArrayList<String> commentlessFile = new ArrayList<>();
         for (String line:rawFile) {
