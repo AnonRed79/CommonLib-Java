@@ -58,7 +58,6 @@ public class ConfigParser {
             rawFile = Files.readAllLines(file);
         } catch (IOException e) {
             throw new BadPathException("the file \"" + file + "\" could not be found, check names and locations");
-        }
 
 //        removes comments
         ArrayList<String> commentlessFile = new ArrayList<>();
