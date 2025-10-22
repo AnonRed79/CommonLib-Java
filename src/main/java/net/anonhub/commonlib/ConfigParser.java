@@ -60,6 +60,7 @@ public class ConfigParser {
             throw new BadPathException("the file \"" + file + "\" could not be found, check names and locations");
         }
 
+
 //        removes comments
         ArrayList<String> commentlessFile = new ArrayList<>();
         for (String line:rawFile) {
@@ -131,7 +132,7 @@ public class ConfigParser {
 
                     switch (rawValues.charAt(0)) {
                         case ('\"') -> {
-                            valueTypes.add("String");
+                            valueTypes.add("s");
                             for (int j = 1; j < rawValues.length(); j++) {
                                 if (rawValues.charAt(j) == '\"') {
                                     values.add(rawValues.substring(1, j));
@@ -142,7 +143,7 @@ public class ConfigParser {
                             }
                         }
                         case ('\'') -> {
-                            valueTypes.add("char");
+                            valueTypes.add("c");
                             if (rawValues.charAt(2)=='\'') {
                                 rawValues.deleteCharAt(0);
                                 values.add(String.valueOf(rawValues.charAt(0)));
@@ -151,7 +152,7 @@ public class ConfigParser {
                             }
                         }
                         case ('b') -> {
-                            valueTypes.add("byte");
+                            valueTypes.add("b");
                             rawValues.append(END_CHAR);
                             for (int j = 1; j < rawValues.length(); j++) {
                                 String testNum;
@@ -167,7 +168,7 @@ public class ConfigParser {
                             }
                         }
                         case ('s') -> {
-                            valueTypes.add("short");
+                            valueTypes.add("s");
                             rawValues.append(END_CHAR);
                             for (int j = 1; j < rawValues.length(); j++) {
                                 String testNum = String.valueOf(rawValues.charAt(j));
@@ -182,7 +183,7 @@ public class ConfigParser {
                             }
                         }
                         case ('i') -> {
-                            valueTypes.add("int");
+                            valueTypes.add("i");
                             rawValues.append(END_CHAR);
                             for (int j = 1; j < rawValues.length(); j++) {
                                 String testNum = String.valueOf(rawValues.charAt(j));
@@ -197,7 +198,7 @@ public class ConfigParser {
                             }
                         }
                         case ('l') -> {
-                            valueTypes.add("long");
+                            valueTypes.add("l");
                             rawValues.append(END_CHAR);
                             for (int j = 1; j < rawValues.length(); j++) {
                                 String testNum = String.valueOf(rawValues.charAt(j));
@@ -212,7 +213,7 @@ public class ConfigParser {
                             }
                         }
                         case ('f') -> {
-                            valueTypes.add("float");
+                            valueTypes.add("f");
                             rawValues.append(END_CHAR);
                             boolean dot = false;
                             for (int j = 1; j < rawValues.length(); j++) {
@@ -232,7 +233,7 @@ public class ConfigParser {
                             }
                         }
                         case ('d') -> {
-                            valueTypes.add("double");
+                            valueTypes.add("d");
                             rawValues.append(END_CHAR);
                             boolean dot = false;
                             for (int j = 1; j < rawValues.length(); j++) {
