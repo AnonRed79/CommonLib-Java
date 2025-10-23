@@ -1,0 +1,12 @@
+.gradle
+.idea
+build/
+out/
+gradle/
+resources
+src/test
+
+ignore.gitignore
+
+*.gitignore
+logs
