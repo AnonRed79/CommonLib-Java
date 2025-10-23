@@ -1,5 +1,4 @@
 .gradle
-gradle
 build/
 !**/src/main/**/build/
 !**/src/main/resources/
@@ -38,7 +37,6 @@ bin/
 ### Mac OS ###
 .DS_Store
 
-gradle/
 resources/
 src/test
 
