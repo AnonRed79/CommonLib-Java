@@ -38,3 +38,9 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+gradle/
+resources
+src/test
+
+*.gitignore
