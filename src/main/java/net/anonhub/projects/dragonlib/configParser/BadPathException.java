@@ -1,4 +1,4 @@
-package net.anonhub.commonlib.configParser;
+package net.anonhub.projects.dragonlib.configParser;
 
 public class BadPathException extends ConfigParserException {
     public BadPathException(String s) {

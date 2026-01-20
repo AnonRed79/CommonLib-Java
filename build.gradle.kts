@@ -2,7 +2,7 @@ plugins {
     id("java")
 }
 
-group = "net.anonhub.game_engine"
+group = "net.anonhub.projects.dragonlib"
 version = "0.1.3"
 
 repositories {

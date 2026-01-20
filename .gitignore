@@ -1,7 +1,7 @@
 .gradle
 build/
 !**/src/main/**/build/
-!**/src/main/resources/
+!**/src/main/resources
 !**/src/test/
 
 ### IntelliJ IDEA ###
@@ -37,7 +37,9 @@ bin/
 ### Mac OS ###
 .DS_Store
 
-resources/
+resources
 src/test
 
 *.gitignore
+/src/test/
+/resources/

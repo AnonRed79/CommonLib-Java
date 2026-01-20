@@ -1,2 +1,2 @@
-rootProject.name = "CommonLib"
+rootProject.name = "DragonLib"
 
